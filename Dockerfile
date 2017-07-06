@@ -15,5 +15,5 @@ RUN make all WHAT=cmd/kubectl && \
     make all WHAT=vendor/github.com/onsi/ginkgo/ginkgo && \
     make all WHAT=test/e2e/e2e.test
 
-COPY conformance.sh /
+COPY script/conformance.sh /
 CMD /conformance.sh
